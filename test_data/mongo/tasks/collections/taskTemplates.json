@@ -1,0 +1,57 @@
+[
+  {
+    "_id": {"$oid": "63fa2f16b70ed89144e3710e"},
+    "cacheNamespace": "",
+    "cacheScope": "",
+    "finalPolicy": "",
+    "method": "GET",
+    "name": "exampleTask",
+    "requestPolicy": "",
+    "responsePolicy": "",
+    "url": "https://jsonplaceholder.typicode.com/todos/1"
+  },
+    "_id": {"$oid": "63fa2f16b70ed89144e3710f"},
+    "cacheNamespace": "",
+    "cacheScope": "",
+    "finalPolicy": "",
+    "method": "GET",
+    "name": "exampleTaskPolicy",
+    "requestPolicy": "example/example/1.0",
+    "responsePolicy": "",
+    "url": ""
+  },
+  {
+    "_id": {"$oid": "63fa2f16b70ed89144e37110"},
+    "cacheNamespace": "",
+    "cacheScope": "",
+    "finalPolicy": "",
+    "method": "GET",
+    "name": "exampleTask2",
+    "requestPolicy": "",
+    "responsePolicy": "",
+    "url": "https://jsonplaceholder.typicode.com/todos/1"
+  },
+  {
+    "_id": {"$oid": "64649b40c16883754e8aff44"},
+    "method": "GET",
+    "name": "didResolve",
+    "requestPolicy": "policies/example/didResolve/1.0"
+  },
+  {
+    "_id": {"$oid": "6465d77a4db48957264a74f5"},
+    "method": "GET",
+    "name": "getKeyDID",
+    "requestPolicy": "policies/example/getKeyDID/1.0"
+  },
+  {
+    "_id": {"$oid": "6465e8aa4db48957264a74fb"},
+    "method": "GET",
+    "name": "failingTask",
+    "requestPolicy": "exmaple"
+  },
+  {
+    "_id": {"$oid": "6567029d4a3dc2490ffbba3c"},
+    "name": "cacheEventTask",
+    "requestPolicy": "policies/example/cacheEvent/1.0"
+  }
+]

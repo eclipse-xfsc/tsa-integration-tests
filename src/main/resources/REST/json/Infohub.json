@@ -1,0 +1,190 @@
+{
+  "successful_import": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-11-09T14:29:02.735353672Z",
+      "jws": "eyJhbGciOiIiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..MEUCIDQOzOP-RLNmF03gGBCfwppLXMiFf3VyDLTOtDRGqNz-AiEAj9pOzVfgKTM7Q4py7QcVJuZdQAvVligjN4jSQyrDUtc",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": true,
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "successful_import_ID": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-11-09T14:49:01.930441438Z",
+      "jws": "eyJhbGciOiIiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..MEUCIQCc0TJ6o4PGQmDEW4xO_-jWbwxnem-araTK8jOteUWcbAIgERukV-OSdDSSBohslgQLx7gE1v36TSxB15TGtfatjV0",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": true,
+          "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "modified_ID": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-11-09T14:49:01.930441438Z",
+      "jws": "eyJhbGciOiIiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..MEUCIQCc0TJ6o4PGQmDEW4xO_-jWbwxnem-araTK8jOteUWcbAIgERukV-OSdDSSBohslgQLx7gE1v36TSxB15TGtfatjV0",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": true,
+          "id": "did:web:vault.vereignZZZZZZ.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "modified_allow": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-11-09T14:49:01.930441438Z",
+      "jws": "eyJhbGciOiIiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..MEUCIQCc0TJ6o4PGQmDEW4xO_-jWbwxnem-araTK8jOteUWcbAIgERukV-OSdDSSBohslgQLx7gE1v36TSxB15TGtfatjV0",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": false,
+          "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  }
+}

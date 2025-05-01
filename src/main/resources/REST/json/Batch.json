@@ -1,0 +1,47 @@
+{
+  "successful_batch": {
+    "batch": {
+      "seal_id_1": "gAxtEAEaElNlbmRlclN0YXR1c09iamVjdA=="
+    }
+  },
+  "multiple_requests": {
+    "batch": {
+      "seal_id_1": "gAxtEAEaElNlbmRlclN0YXR1c09iamVjdA==",
+      "seal_id_2": "gAxtEAEaElNlbmRlclN0YXR1c09iamVjd233==",
+      "seal_id_3": "gAxtEAEaElNlbmRlclN0YXR1c09iamVjd234=="
+    }
+  },
+  "missing_batch": {
+      "seal_id_1": "gAxtEAEaElNlbmRlclN0YXR1c09iamVjdA=="
+  },
+  "not_base64_value": {
+    "batch": {
+      "seal_id_1": "dasdadasd"
+    }
+  },
+  "empty_seal_key": {
+    "batch": {
+      "": "gAxtEAEaElNlbmRlclN0YXR1c09iamVjdA=="
+    }
+  },
+  "empty_seal_value": {
+    "batch": {
+      "seal_id_1": ""
+    }
+  },
+  "missing_seal": {
+    "batch": {
+    }
+  },
+  "getStatuses_success": {
+    "key": "seal_id_1"
+  },
+  "getStatuses_missing_key": {
+    "": "seal_id_1"
+  },
+  "getStatuses_missing_value": {
+    "key": ""
+  },
+  "getStatuses_empty": {
+  }
+}

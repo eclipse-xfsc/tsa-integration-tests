@@ -1,0 +1,18 @@
+[
+  {
+    "_id": {"$oid": "63fa2f16b70ed89144e37114"},
+    "contexts": ["https://www.w3.org/2018/credentials/examples/v1"],
+    "exportName": "testexport",
+    "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "keyNamespace": "transit",
+    "policies": {
+      "policies/example/examplePolicy/1.0": {
+        "message": "example"
+      },
+      "policies/example/ProofRequestResponse/1.0": {
+        "hello": "world"
+      }
+    }
+  }
+]

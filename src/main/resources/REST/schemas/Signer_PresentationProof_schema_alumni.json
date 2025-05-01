@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "proof": {
+      "type": "object",
+      "properties": {
+        "created": {
+          "type": "string"
+        },
+        "jws": {
+          "type": "string"
+        },
+        "proofPurpose": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "verificationMethod": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "created",
+        "jws",
+        "proofPurpose",
+        "type",
+        "verificationMethod"
+      ]
+    },
+    "type": {
+      "type": "string"
+    },
+    "verifiableCredential": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "@context": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "credentialSubject": {
+              "type": "object",
+              "properties": {
+                "alumniOf": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "lang": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "lang",
+                            "value"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "lang": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "lang",
+                            "value"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "alumniOf",
+                "id"
+              ]
+            },
+            "id": {
+              "type": "string"
+            },
+            "issuanceDate": {
+              "type": "string"
+            },
+            "issuer": {
+              "type": "string"
+            },
+            "type": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "@context",
+            "credentialSubject",
+            "id",
+            "issuanceDate",
+            "issuer",
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "proof",
+    "type",
+    "verifiableCredential"
+  ]
+}

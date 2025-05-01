@@ -1,0 +1,698 @@
+{
+	"info": {
+		"_postman_id": "01a99dcf-c145-409d-928a-fc6cbabda235",
+		"name": "Trust Services API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Evaluate hello world policy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", () => {",
+							"  pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"pm.test(\"The evaluation response has all properties\", () => {",
+							"    //parse the response JSON and test three properties",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.allow).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"message\":\"example\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{policy_base_url}}/policy/:group/:policyName/:version/evaluation",
+					"host": [
+						"{{policy_base_url}}"
+					],
+					"path": [
+						"policy",
+						":group",
+						":policyName",
+						":version",
+						"evaluation"
+					],
+					"variable": [
+						{
+							"key": "group",
+							"value": "example"
+						},
+						{
+							"key": "policyName",
+							"value": "examplePolicy"
+						},
+						{
+							"key": "version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Evaluate resolving DID policy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", () => {",
+							"  pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"pm.test(\"The evaluation response has all properties\", () => {",
+							"    //parse the response JSON and test three properties",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.data.didDocument).to.be.an('object')",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "group",
+						"value": "example",
+						"type": "default"
+					},
+					{
+						"key": "policyName",
+						"value": "resolve",
+						"type": "default"
+					},
+					{
+						"key": "version",
+						"value": "1.0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"did\":\"did:key:z6Mkfriq1MqLBoPWecGoDLjguo1sB9brj6wT3qZ5BxkKpuP6\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{policy_base_url}}/policy/:group/:policyName/:version/evaluation",
+					"host": [
+						"{{policy_base_url}}"
+					],
+					"path": [
+						"policy",
+						":group",
+						":policyName",
+						":version",
+						"evaluation"
+					],
+					"variable": [
+						{
+							"key": "group",
+							"value": "example"
+						},
+						{
+							"key": "policyName",
+							"value": "didResolve"
+						},
+						{
+							"key": "version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Evaluate cacheSet policy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", () => {",
+							"  pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"pm.test(\"The evaluation response has all properties\", () => {",
+							"    //parse the response JSON and test three properties",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.success).to.be.equal(true)",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "group",
+						"value": "example",
+						"type": "default"
+					},
+					{
+						"key": "policyName",
+						"value": "resolve",
+						"type": "default"
+					},
+					{
+						"key": "version",
+						"value": "1.0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"did\":\"did:key:z6Mkfriq1MqLBoPWecGoDLjguo1sB9brj6wT3qZ5BxkKpuP6\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{policy_base_url}}/policy/:group/:policyName/:version/evaluation",
+					"host": [
+						"{{policy_base_url}}"
+					],
+					"path": [
+						"policy",
+						":group",
+						":policyName",
+						":version",
+						"evaluation"
+					],
+					"variable": [
+						{
+							"key": "group",
+							"value": "example"
+						},
+						{
+							"key": "policyName",
+							"value": "cacheSet"
+						},
+						{
+							"key": "version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Evaluate cacheGet policy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", () => {",
+							"  pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"pm.test(\"The evaluation response has all properties\", () => {",
+							"    //parse the response JSON and test three properties",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.data.didDocument).to.be.an('object')",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "group",
+						"value": "example",
+						"type": "default"
+					},
+					{
+						"key": "policyName",
+						"value": "resolve",
+						"type": "default"
+					},
+					{
+						"key": "version",
+						"value": "1.0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"did\":\"did:key:z6Mkfriq1MqLBoPWecGoDLjguo1sB9brj6wT3qZ5BxkKpuP6\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{policy_base_url}}/policy/:group/:policyName/:version/evaluation",
+					"host": [
+						"{{policy_base_url}}"
+					],
+					"path": [
+						"policy",
+						":group",
+						":policyName",
+						":version",
+						"evaluation"
+					],
+					"variable": [
+						{
+							"key": "group",
+							"value": "example"
+						},
+						{
+							"key": "policyName",
+							"value": "cacheGet"
+						},
+						{
+							"key": "version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Evaluate task execution policy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", () => {",
+							"  pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"pm.test(\"The evaluation response has all properties\", () => {",
+							"    //parse the response JSON and test three properties",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.result).to.be.a('object');",
+							"    pm.expect(responseJson.result.taskID).to.be.a('string');",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "group",
+						"value": "example",
+						"type": "default"
+					},
+					{
+						"key": "policyName",
+						"value": "resolve",
+						"type": "default"
+					},
+					{
+						"key": "version",
+						"value": "1.0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"exampleTask\",\n  \"data\": {\n    \"key\": \"value\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{policy_base_url}}/policy/:group/:policyName/:version/evaluation",
+					"host": [
+						"{{policy_base_url}}"
+					],
+					"path": [
+						"policy",
+						":group",
+						":policyName",
+						":version",
+						"evaluation"
+					],
+					"variable": [
+						{
+							"key": "group",
+							"value": "example"
+						},
+						{
+							"key": "policyName",
+							"value": "createTask"
+						},
+						{
+							"key": "version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Evaluate task list execution policy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", () => {",
+							"  pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"pm.test(\"The evaluation response has all properties\", () => {",
+							"    //parse the response JSON and test three properties",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.evaluationID).to.be.a('string');;",
+							"    pm.expect(responseJson.result.res.taskID).to.be.a('string')",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "group",
+						"value": "example",
+						"type": "default"
+					},
+					{
+						"key": "policyName",
+						"value": "resolve",
+						"type": "default"
+					},
+					{
+						"key": "version",
+						"value": "1.0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"mixedTaskList\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{policy_base_url}}/policy/:group/:policyName/:version/evaluation",
+					"host": [
+						"{{policy_base_url}}"
+					],
+					"path": [
+						"policy",
+						":group",
+						":policyName",
+						":version",
+						"evaluation"
+					],
+					"variable": [
+						{
+							"key": "group",
+							"value": "example"
+						},
+						{
+							"key": "policyName",
+							"value": "createTaskList"
+						},
+						{
+							"key": "version",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the task execution result",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-cache-key",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{cache_base_url}}/v1/cache",
+					"host": [
+						"{{cache_base_url}}"
+					],
+					"path": [
+						"v1",
+						"cache"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trusted info exchange - export",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{infohub_base_url}}/v1/export/:exportName",
+					"host": [
+						"{{infohub_base_url}}"
+					],
+					"path": [
+						"v1",
+						"export",
+						":exportName"
+					],
+					"variable": [
+						{
+							"key": "exportName",
+							"value": "testexport"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trusted info exchange - import",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{infohub_base_url}}/v1/import",
+					"host": [
+						"{{infohub_base_url}}"
+					],
+					"path": [
+						"v1",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(not implemented) Execute the task list - parallel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cache events",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-cache-key",
+						"value": "did:web:example.com",
+						"type": "default"
+					},
+					{
+						"key": "x-cache-namespace",
+						"value": "Login",
+						"type": "default"
+					},
+					{
+						"key": "x-cache-scope",
+						"value": "administration",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Repellendus quo.\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{cache_base_url}}/v1/external/cache",
+					"host": [
+						"{{cache_base_url}}"
+					],
+					"path": [
+						"v1",
+						"external",
+						"cache"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signing (building proof)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"@context\": [\n    \"https://www.w3.org/2018/credentials/v1\"\n  ],\n  \"credentialSubject\": {\n    \"hello\": \"world\"\n  },\n  \"issuanceDate\": \"2022-06-02T17:24:05.032533+03:00\",\n  \"issuer\": \"https://example.com\",\n  \"type\": \"VerifiableCredential\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{signer_base_url}}/v1/credential/proof?key=key1",
+					"host": [
+						"{{signer_base_url}}"
+					],
+					"path": [
+						"v1",
+						"credential",
+						"proof"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "key1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "policy_base_url",
+			"value": "http://localhost:8081",
+			"type": "default"
+		},
+		{
+			"key": "cache_base_url",
+			"value": "http://localhost:8083",
+			"type": "default"
+		},
+		{
+			"key": "infohub_base_url",
+			"value": "http://localhost:8084",
+			"type": "default"
+		},
+		{
+			"key": "signer_base_url",
+			"value": "http://localhost:8085",
+			"type": "default"
+		}
+	]
+}

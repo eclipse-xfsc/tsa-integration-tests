@@ -1,0 +1,47 @@
+{
+  "successful_message": {
+    "message": "hello world"
+  },
+  "incorrect_message": {
+    "message": "wrong value!"
+  },
+  "did_indy": {
+    "did":"did:indy:idunion:BDrEcHc8Tb4Lb2VyQZWEDE"
+  },
+  "did_key": {
+    "did":"did:key:z6Mkfriq1MqLBoPWecGoDLjguo1sB9brj6wT3qZ5BxkKpuP6"
+  },
+  "did_missing_method": {
+    "did":"did:idunion:BDrEcHc8Tb4Lb2VyQZWEDE"
+  },
+  "empty": {},
+  "valid_schema_output": {
+    "foo": "barbaz"
+  },
+  "invalid_schema_output": {
+    "foo": "bar"
+  },
+  "storageSet": {
+    "key": "dataEntry1",
+    "data": {
+      "record1": "value for record 1",
+      "record2": true,
+      "record3": 3
+    }
+  },
+  "storageKey": {
+    "key": "dataEntry1"
+  },
+  "emptyKey": {
+    "key": "",
+    "data": "data for empty key"
+  },
+  "numberAsKey": {
+    "key": 1,
+    "data": "data for numeric key"
+  },
+  "emptyData": {
+    "key": "dataEntry1",
+    "data": ""
+  }
+}

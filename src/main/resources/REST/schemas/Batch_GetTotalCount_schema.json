@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "status",
+    "code",
+    "data",
+    "counters"
+  ],
+  "properties": {
+    "status": {
+      "$id": "#root/status",
+      "title": "Status",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "OK"
+      ],
+      "pattern": "^.*$"
+    },
+    "code": {
+      "$id": "#root/code",
+      "title": "Code",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "200"
+      ],
+      "pattern": "^.*$"
+    },
+    "data": {
+      "$id": "#root/data",
+      "title": "Data",
+      "type": "integer",
+      "examples": [
+        50
+      ],
+      "default": 0
+    },
+    "counters": {
+      "$id": "#root/counters",
+      "title": "Counters",
+      "type": "object",
+      "required": [
+        "receivedStatus",
+        "storedStatus",
+        "anchoredStatus",
+        "anchoredBatches"
+      ],
+      "properties": {
+        "receivedStatus": {
+          "$id": "#root/counters/receivedStatus",
+          "title": "Receivedstatus",
+          "type": "integer",
+          "examples": [
+            50
+          ],
+          "default": 0
+        },
+        "storedStatus": {
+          "$id": "#root/counters/storedStatus",
+          "title": "Storedstatus",
+          "type": "integer",
+          "examples": [
+            50
+          ],
+          "default": 0
+        },
+        "anchoredStatus": {
+          "$id": "#root/counters/anchoredStatus",
+          "title": "Anchoredstatus",
+          "type": "integer",
+          "examples": [
+            50
+          ],
+          "default": 0
+        },
+        "anchoredBatches": {
+          "$id": "#root/counters/anchoredBatches",
+          "title": "Anchoredbatches",
+          "type": "integer",
+          "examples": [
+            40
+          ],
+          "default": 0
+        }
+      }
+    }
+
+  }
+}

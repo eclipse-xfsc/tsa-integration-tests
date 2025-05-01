@@ -1,0 +1,22 @@
+{
+  "successful_set": {
+    "msg": "successful setting the cache"
+  },
+  "missing_body": {
+  },
+  "default_set": {
+    "msg": "default"
+  },
+  "content_access_01": {
+    "key": "value 01",
+    "data": "data value 01"
+  },
+  "content_access_02": {
+    "key": "value 02",
+    "data": "data value 02"
+  },
+  "content_access_03": {
+    "key": "value 03",
+    "data": "data value 03"
+  }
+}

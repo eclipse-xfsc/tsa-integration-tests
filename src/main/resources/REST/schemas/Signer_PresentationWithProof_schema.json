@@ -1,0 +1,270 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "id": {
+      "type": "string"
+    },
+    "proof": {
+      "type": "object",
+      "properties": {
+        "created": {
+          "type": "string"
+        },
+        "jws": {
+          "type": "string"
+        },
+        "proofPurpose": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "verificationMethod": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "created",
+        "jws",
+        "proofPurpose",
+        "type",
+        "verificationMethod"
+      ]
+    },
+    "type": {
+      "type": "string"
+    },
+    "verifiableCredential": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "@context": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "credentialSubject": {
+              "type": "object",
+              "properties": {
+                "allow": {
+                  "type": "boolean"
+                },
+                "array": {
+                  "type": "object",
+                  "properties": {
+                    "txt1": {
+                      "type": "string"
+                    },
+                    "txt2": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "txt1",
+                    "txt2"
+                  ]
+                },
+                "id": {
+                  "type": "string"
+                },
+                "num": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "allow",
+                "array",
+                "id",
+                "num"
+              ]
+            },
+            "id": {
+              "type": "string"
+            },
+            "issuanceDate": {
+              "type": "string"
+            },
+            "issuer": {
+              "type": "string"
+            },
+            "proof": {
+              "type": "object",
+              "properties": {
+                "created": {
+                  "type": "string"
+                },
+                "jws": {
+                  "type": "string"
+                },
+                "proofPurpose": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "verificationMethod": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "created",
+                "jws",
+                "proofPurpose",
+                "type",
+                "verificationMethod"
+              ]
+            },
+            "type": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "@context",
+            "credentialSubject",
+            "id",
+            "issuanceDate",
+            "issuer",
+            "proof",
+            "type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "@context": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "credentialSubject": {
+              "type": "object",
+              "properties": {
+                "age_over": {
+                  "type": "integer"
+                },
+                "allow": {
+                  "type": "boolean"
+                },
+                "citizenship": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "age_over",
+                "allow",
+                "citizenship",
+                "id"
+              ]
+            },
+            "id": {
+              "type": "string"
+            },
+            "issuanceDate": {
+              "type": "string"
+            },
+            "issuer": {
+              "type": "string"
+            },
+            "proof": {
+              "type": "object",
+              "properties": {
+                "created": {
+                  "type": "string"
+                },
+                "jws": {
+                  "type": "string"
+                },
+                "proofPurpose": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "verificationMethod": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "created",
+                "jws",
+                "proofPurpose",
+                "type",
+                "verificationMethod"
+              ]
+            },
+            "type": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "@context",
+            "credentialSubject",
+            "id",
+            "issuanceDate",
+            "issuer",
+            "proof",
+            "type"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "id",
+    "proof",
+    "type",
+    "verifiableCredential"
+  ]
+}

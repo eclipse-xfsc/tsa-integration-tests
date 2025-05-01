@@ -1,0 +1,75 @@
+[
+  {
+    "_id": {"$oid": "63fa2f16b70ed89144e37111"},
+    "cacheNamespace": "login",
+    "cacheScope": "user",
+    "groups": [
+      {
+        "execution": "sequential",
+        "tasks": ["exampleTask", "exampleTask2"]
+      }
+    ],
+    "name": "sequentialTaskList"
+  },
+  {
+    "_id": {"$oid": "63fa2f16b70ed89144e37112"},
+    "cacheNamespace": "login",
+    "cacheScope": "user",
+    "groups": [
+      {
+        "execution": "parallel",
+        "tasks": ["exampleTask", "exampleTask2"]
+      }
+    ],
+    "name": "parallelTaskList"
+  },
+  {
+    "_id": {"$oid": "63fa2f16b70ed89144e37113"},
+    "cacheNamespace": "login",
+    "cacheScope": "user",
+    "groups": [
+      {
+        "execution": "parallel",
+        "tasks": ["exampleTask", "exampleTask2"]
+      },
+      {
+        "execution": "sequential",
+        "tasks": ["exampleTask", "exampleTask2"]
+      }
+    ],
+    "name": "mixedTaskList"
+  },
+  {
+    "_id": {"$oid": "6465d0704db48957264a74f1"},
+    "groups": [
+      {
+        "execution": "sequential",
+        "finalPolicy": "",
+        "tasks": ["getKeyDID", "didResolve"]
+      }
+    ],
+    "name": "testList"
+  },
+  {
+    "_id": {"$oid": "6465e7e44db48957264a74f8"},
+    "groups": [
+      {
+        "execution": "sequential",
+        "finalPolicy": "",
+        "tasks": ["getKeyDID", "failingTask", "exampleTask"]
+      }
+    ],
+    "name": "failTestListSync"
+  },
+  {
+    "_id": {"$oid": "6465e7e54db48957264a74f9"},
+    "groups": [
+      {
+        "execution": "parallel",
+        "finalPolicy": "",
+        "tasks": ["getKeyDID", "failingTask", "exampleTask"]
+      }
+    ],
+    "name": "failTestListAsync"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "string"
+            },
+            "TransactionID": {
+              "type": "string"
+            },
+            "BatchID": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Status",
+            "TransactionID",
+            "BatchID"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "Status": {
+              "type": "string"
+            },
+            "TransactionID": {
+              "type": "string"
+            },
+            "BatchID": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Status",
+            "TransactionID",
+            "BatchID"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "code",
+    "data"
+  ]
+}

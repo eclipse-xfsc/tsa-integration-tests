@@ -1,0 +1,33 @@
+{
+  "evaluationID": "1f5ba887-8360-46a5-a8af-7a4a8175582d",
+  "result": {
+    "doc": {
+      "@context": "https://w3id.org/did-resolution/v1",
+      "didDocument": {
+        "authentication": [
+          "did:indy:idunion:BDrEcHc8Tb4Lb2VyQZWEDE#verkey"
+        ],
+        "id": "did:indy:idunion:BDrEcHc8Tb4Lb2VyQZWEDE",
+        "verificationMethod": [
+          {
+            "controller": "did:indy:idunion:BDrEcHc8Tb4Lb2VyQZWEDE",
+            "id": "did:indy:idunion:BDrEcHc8Tb4Lb2VyQZWEDE#verkey",
+            "publicKeyBase58": "2HHAKDS8EZK5ZfgZTT7jJFjE5bqkZuFoUgHYAZLjFMbY",
+            "type": "Ed25519VerificationKey2018"
+          }
+        ]
+      },
+      "didResolutionMetadata": {
+        "contentType": "application/did+ld+json",
+        "did": {
+          "didString": "did:indy:idunion:BDrEcHc8Tb4Lb2VyQZWEDE",
+          "method": "indy",
+          "methodSpecificId": "idunion:BDrEcHc8Tb4Lb2VyQZWEDE"
+        },
+        "driverUrl": "http://indy-did-driver:8080/1.0/identifiers/$1",
+        "duration": 708,
+        "pattern": "^(did:indy:.+)$"
+      }
+    }
+  }
+}

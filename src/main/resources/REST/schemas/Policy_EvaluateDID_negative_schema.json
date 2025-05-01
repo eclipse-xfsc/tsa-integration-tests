@@ -1,0 +1,48 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"data": {
+			"type": "object",
+			"properties": {
+				"@context": {
+					"type": "string"
+				},
+				"didDocument": {
+					"type": "null"
+				},
+				"didDocumentMetadata": {
+					"type": "object"
+				},
+				"didResolutionMetadata": {
+					"type": "object",
+					"properties": {
+						"contentType": {
+							"type": "string"
+						},
+						"error": {
+							"type": "string"
+						},
+						"errorMessage": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"contentType",
+						"error",
+						"errorMessage"
+					]
+				}
+			},
+			"required": [
+				"@context",
+				"didDocument",
+				"didDocumentMetadata",
+				"didResolutionMetadata"
+			]
+		}
+	},
+	"required": [
+		"data"
+	]
+}

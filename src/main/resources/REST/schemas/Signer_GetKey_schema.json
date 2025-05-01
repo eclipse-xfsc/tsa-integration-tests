@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "controller": {
+      "type": "string"
+    },
+    "publicKeyJwk": {
+      "type": "object",
+      "properties": {
+        "kty": {
+          "type": "string"
+        },
+        "kid": {
+          "type": "string"
+        },
+        "crv": {
+          "type": "string"
+        },
+        "x": {
+          "type": "string"
+        },
+        "y": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kty",
+        "kid",
+        "crv",
+        "x",
+        "y"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "controller",
+    "publicKeyJwk"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "temporary": {
+      "type": "boolean"
+    },
+    "timeout": {
+      "type": "boolean"
+    },
+    "fault": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "name",
+    "id",
+    "message",
+    "temporary",
+    "timeout",
+    "fault"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "single": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "data": [
+      {
+        "age": 21,
+        "over18": true
+      }
+    ]
+  },
+  "multi": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "data": [
+      {
+        "dataOfBirth": "-0571-01-01T07:53:06.234142119Z",
+        "age": 2592,
+        "over18": true
+      },
+      {
+        "fName": "Pythagoras",
+        "lName": "of Samos"
+      }
+    ]
+  },
+  "context": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://schema.org"
+    ],
+    "data": [
+      {
+        "dataOfBirth": "-0571-01-01T07:53:06.234142119Z",
+        "age": 2592,
+        "over18": true
+      },
+      {
+        "fName": "Pythagoras",
+        "lName": "of Samos"
+      }
+    ]
+  },
+  "blank": {
+  },
+  "missing_data": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "not_data": [
+      {
+        "age": 21,
+        "over18": true
+      }
+    ]
+  },
+  "blank_data": {
+    "data": []
+  },
+  "data_format": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "data": "different format"
+  },
+  "context_no_at": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://schema.org"
+    ],
+    "data": [
+      {
+        "dataOfBirth": "-0571-01-01T07:53:06.234142119Z",
+        "age": 2592,
+        "over18": true
+      },
+      {
+        "fName": "Pythagoras",
+        "lName": "of Samos"
+      }
+    ]
+  }
+}

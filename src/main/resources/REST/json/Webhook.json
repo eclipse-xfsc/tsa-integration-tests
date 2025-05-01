@@ -1,0 +1,12 @@
+{
+  "successful_address": {
+    "subscriber": "vereign.test.policy",
+    "webhook_url": "https://webhook.site/4d79f1a0-9608-4d5b-9187-dfe18ae3467b"
+  },
+  "missing_url": {
+    "subscriber": "vereign.rest.policy"
+  },
+  "missing_subscriber": {
+    "webhook_url": "https://webhook.site/4d79f1a0-9608-4d5b-9187-dfe18ae3467b"
+  }
+}

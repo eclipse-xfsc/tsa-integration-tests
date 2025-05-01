@@ -1,0 +1,1204 @@
+{
+  "for_proof": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "citizenship": "France",
+            "age_over": 18,
+            "id": "https://gaiax.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": "https://gaiax.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "for_proof_happypath_gaiax": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "citizenship": "France",
+            "age_over": 18,
+            "id": "https://gaiax.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": "https://gaiax.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "for_proof_happypath_vault": {
+    "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "citizenship": "France",
+            "age_over": 18,
+            "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "for_proof_happypath_ssi-dev": {
+    "issuer": "did:web:ssi-dev.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:ssi-dev.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "citizenship": "France",
+            "age_over": 18,
+            "id": "https://ssi-dev.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:ssi-dev.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "for_proof_alumni": {
+    "issuer": "https://example.edu/issuers/565049",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.w3.org/2018/credentials/examples/v1"
+      ],
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1"
+          ],
+          "id": "http://example.edu/credentials/1872",
+          "type": [
+            "VerifiableCredential",
+            "AlumniCredential"
+          ],
+          "issuer": "https://example.edu/issuers/565049",
+          "issuanceDate": "2010-01-01T19:23:24Z",
+          "credentialSubject": {
+            "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
+            "alumniOf": {
+              "id": "did:example:c276e12ec21ebfeb1f712ebc6f1",
+              "name": [
+                {
+                  "value": "Example University",
+                  "lang": "en"
+                },
+                {
+                  "value": "Exemple d'Université",
+                  "lang": "fr"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "for_proof_with_proofs": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "type": [
+        "VerifiablePresentation"
+      ],
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "array": {
+              "txt1": "1",
+              "txt2": "2"
+            },
+            "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+            "num": 123
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:vault.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2023-05-17T13:59:38.585761553Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEYCIQC7tvM1N6khgeX5kxnmD1i1wos8S4LOwJTLPvBLqBrqmAIhAPyj1LZ5v0q428gPcvrX386SPPISviXpjhhzde6XqOCj",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "age_over": 18,
+            "allow": true,
+            "citizenship": "France",
+            "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation"
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:ssi-dev.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2023-04-11T08:16:51.645723638Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEQCIGxdwsdZ9DGRfUQS1S61baeEIlr6IVehGiaX1oIfFldKAiBUGJEA0ArOR7tVd6MIY4hTJLs4VEnWzJExIvNnt_0qPg",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:ssi-dev.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        }
+      ]
+    }
+  },
+  "for_proof_with_proofs_vault": {
+    "issuer": "did:web:vault.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "type": [
+        "VerifiablePresentation"
+      ],
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "array": {
+              "txt1": "1",
+              "txt2": "2"
+            },
+            "id": "did:web:vault.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+            "num": 123
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2023-05-18T15:44:49.326454798Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEYCIQCZ5q91EP2aB7P_QNlDZ6Y4NJCE9iGKwPYexA6ZY1VNOAIhAKONw-2kiwE2Q6vTt2CUKyFn292oPfa57LCD9d0Ne-cl",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "age_over": 18,
+            "allow": true,
+            "citizenship": "France",
+            "id": "did:web:vault.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation"
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:ssi-dev.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2023-05-18T15:48:23.632994657Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEYCIQCjPNtGhnHV2Bx89EUtSV_xuVFlOnH_CukgHxLmP-KLaAIhAIijRzyyNQomNrJ72fBYFbndSsmSSoneC-bTY1_kvor_",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:ssi-dev.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        }
+      ]
+    }
+  },
+  "for_proof_without_ID": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "num": 1234,
+            "type": "pass"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "array": [
+              {
+                "num1": 1,
+                "num2": 2
+              },
+              {
+                "txt1": "1",
+                "txt2": "2"
+              }
+            ]
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "modified_issuanceDate": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-10-26T09:07:12.308698951Z",
+      "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIQD5uu-uW9_EA2ZioJZjhSyfg274SwnaYceYAfAfq49B-QIgY4f0tEKQr-Zz_7lLQ7xwapMDxu_rr2Tm8Wrlmf1al_k",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2020-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": true,
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "modified_credentialSubject_1_allow": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-10-26T09:07:12.308698951Z",
+      "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIQD5uu-uW9_EA2ZioJZjhSyfg274SwnaYceYAfAfq49B-QIgY4f0tEKQr-Zz_7lLQ7xwapMDxu_rr2Tm8Wrlmf1al_k",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": false,
+          "citizenship": "France",
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": true,
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "incorrect_ID": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "proof": {
+        "created": "2022-07-29T15:43:25.076882592Z",
+        "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIQD84hJZfHP84SJSL98XvtUlCNVD48GHb0R-lqqeCPw79wIgXUdmzYoDsUj0sPIVICgN66UX2BHGjDTY7Rlw74m6Rwo",
+        "proofPurpose": "assertionMethod",
+        "type": "JsonWebSignature2020",
+        "verificationMethod": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+      },
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": "incorrect_ID"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": "https://gaiax.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "modified_credentialSubject_2_allow": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-10-26T09:07:12.308698951Z",
+      "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIQD5uu-uW9_EA2ZioJZjhSyfg274SwnaYceYAfAfq49B-QIgY4f0tEKQr-Zz_7lLQ7xwapMDxu_rr2Tm8Wrlmf1al_k",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": false,
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "modified_credentialSubject_1_ID": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-10-26T09:07:12.308698951Z",
+      "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIQD5uu-uW9_EA2ZioJZjhSyfg274SwnaYceYAfAfq49B-QIgY4f0tEKQr-Zz_7lLQ7xwapMDxu_rr2Tm8Wrlmf1al_k",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "https://ZZZZZZZZZZZZ.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": true,
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "modified_credentialSubject_2_ID": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-10-26T09:07:12.308698951Z",
+      "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIQD5uu-uW9_EA2ZioJZjhSyfg274SwnaYceYAfAfq49B-QIgY4f0tEKQr-Zz_7lLQ7xwapMDxu_rr2Tm8Wrlmf1al_k",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": true,
+          "id": "https://ZZZZZZZZ.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "modified_ID": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:ZZZZZZ.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "proof": {
+      "created": "2023-10-26T09:07:12.308698951Z",
+      "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIQD5uu-uW9_EA2ZioJZjhSyfg274SwnaYceYAfAfq49B-QIgY4f0tEKQr-Zz_7lLQ7xwapMDxu_rr2Tm8Wrlmf1al_k",
+      "proofPurpose": "assertionMethod",
+      "type": "JsonWebSignature2020",
+      "verificationMethod": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation#key1"
+    },
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": true,
+          "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "modified_proof_created": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1",
+        "https://www.w3.org/2018/credentials/examples/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "proof": {
+        "created": "2023-07-21T14:28:09.071187173Z",
+        "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEQCIFkavr6XpAYbdurBmQXNei-hI8WHAcnEYkZ6J3i4d3FKAiA4BtVCAixsAypaJ5dcBxn96Ju1OGfi7Kw1QRZMlMumhg",
+        "proofPurpose": "assertionMethod",
+        "type": "JsonWebSignature2020",
+        "verificationMethod": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+      },
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://www.w3.org/2018/credentials/examples/v1"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": "example/examplePolicy/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://www.w3.org/2018/credentials/examples/v1"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": "example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "missing_proof": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "id": "did:web:gaiax.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "type": "VerifiablePresentation",
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "age_over": 18,
+          "allow": true,
+          "citizenship": "France",
+          "id": "https://gaiax.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+        "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      },
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://w3id.org/security/suites/jws-2020/v1",
+          "https://schema.org"
+        ],
+        "credentialSubject": {
+          "allow": true,
+          "id": "https://gaiax.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+        },
+        "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+        "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+        "type": "VerifiableCredential"
+      }
+    ]
+  },
+  "for_proof_incorrect_ID_path": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "citizenship": "France",
+            "age_over": 18,
+            "id": "/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": "https://gaiax.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "for_proof_incorrect_ID_space": {
+    "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "citizenship": "France",
+            "age_over": 18,
+            "id": "https://vault.vereign.com/tsa/policy/example/ProofRequestResponse/1.0"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": " "
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "for_proof_incorrect_ID_symbols": {
+    "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+      "type": "VerifiablePresentation",
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "citizenship": "France",
+            "age_over": 18,
+            "id": ":"
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203848291Z",
+          "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://w3id.org/security/suites/jws-2020/v1",
+            "https://schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "id": " "
+          },
+          "issuanceDate": "2022-07-21T10:24:36.203861194Z",
+          "issuer": "did:web:vault.vereign.com:tsa:policy:policy:policies:example:returnDID:1.0:evaluation",
+          "type": "VerifiableCredential"
+        }
+      ]
+    }
+  },
+  "credential_tampered_verification_method": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "type": [
+        "VerifiablePresentation"
+      ],
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "array": {
+              "txt1": "1",
+              "txt2": "2"
+            },
+            "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+            "num": 123
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:ssi.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2023-04-11T08:13:03.38201499Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIFEQ_8NbyAyZGsq9wou6lBF9qBz8001ViR48Igtwsa6VAiEApUcE9AVMT-n18JQ4xBsHcFgmdzOX9PIXgqSmpdC98b8",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:ssi.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "age_over": 18,
+            "allow": true,
+            "citizenship": "France",
+            "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation"
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:ssi-dev.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2023-04-11T08:16:51.645723638Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEQCIGxdwsdZ9DGRfUQS1S61baeEIlr6IVehGiaX1oIfFldKAiBUGJEA0ArOR7tVd6MIY4hTJLs4VEnWzJExIvNnt_0qPg",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:ssi.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        }
+      ]
+    }
+  },
+  "credential_tampered_created": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "type": [
+        "VerifiablePresentation"
+      ],
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "array": {
+              "txt1": "1",
+              "txt2": "2"
+            },
+            "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+            "num": 123
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:ssi.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2022-04-11T08:13:03.38201499Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIFEQ_8NbyAyZGsq9wou6lBF9qBz8001ViR48Igtwsa6VAiEApUcE9AVMT-n18JQ4xBsHcFgmdzOX9PIXgqSmpdC98b8",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:ssi.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "age_over": 18,
+            "allow": true,
+            "citizenship": "France",
+            "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation"
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:ssi-dev.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2023-04-11T08:16:51.645723638Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEQCIGxdwsdZ9DGRfUQS1S61baeEIlr6IVehGiaX1oIfFldKAiBUGJEA0ArOR7tVd6MIY4hTJLs4VEnWzJExIvNnt_0qPg",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:ssi-dev.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        }
+      ]
+    }
+  },
+  "credential_tampered_credentialSubject": {
+    "issuer": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+    "key": "key1",
+    "namespace": "transit",
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+      ],
+      "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+      "type": [
+        "VerifiablePresentation"
+      ],
+      "verifiableCredential": [
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "allow": true,
+            "array": {
+              "txt1": "1",
+              "txt2": "2"
+            },
+            "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+            "num": 123
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:ssi.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2023-04-11T08:13:03.38201499Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEUCIFEQ_8NbyAyZGsq9wou6lBF9qBz8001ViR48Igtwsa6VAiEApUcE9AVMT-n18JQ4xBsHcFgmdzOX9PIXgqSmpdC98b8",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:ssi.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        },
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            "https://www.w3.org/2018/credentials/examples/v1",
+            "https://www.schema.org"
+          ],
+          "credentialSubject": {
+            "age_over": 48,
+            "allow": true,
+            "citizenship": "France",
+            "id": "did:web:gaiax.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation"
+          },
+          "id": "http://example.edu/credentials/3732",
+          "issuanceDate": "2010-01-01T00:00:00Z",
+          "issuer": "did:web:ssi-dev.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation",
+          "proof": {
+            "created": "2023-04-11T08:16:51.645723638Z",
+            "jws": "eyJhbGciOiJKc29uV2ViU2lnbmF0dXJlMjAyMCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..MEQCIGxdwsdZ9DGRfUQS1S61baeEIlr6IVehGiaX1oIfFldKAiBUGJEA0ArOR7tVd6MIY4hTJLs4VEnWzJExIvNnt_0qPg",
+            "proofPurpose": "assertionMethod",
+            "type": "JsonWebSignature2020",
+            "verificationMethod": "did:web:ssi-dev.vereign.com:tsa:policy:policy:example:returnDID:1.0:evaluation#key1"
+          },
+          "type": [
+            "VerifiableCredential",
+            "UniversityDegreeCredential"
+          ]
+        }
+      ]
+    }
+  }
+}
